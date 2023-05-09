@@ -1,0 +1,374 @@
+@media (max-width: 1240px) {
+  /* enjoy, download, watch, create section */
+  .inner {
+    width: 1000px;
+  }
+  .desc h2 {
+    font-size: 45px;
+  }
+  .desc p {
+    font-size: 20px;
+  }
+
+  .enjoy .desc {
+    padding-top: 40px;
+  }
+  .enjoy .preview img {
+    width: 500px;
+    height: 370px;
+  }
+  .enjoy .preview video {
+    width: 370px;
+  }
+
+  .download .desc {
+    padding-top: 45px;
+  }
+  .download .preview > img {
+    width: 470px; 
+    height: 350px;
+  }
+  
+  .watch .preview img {
+    width: 480px; 
+    height: 400px;
+  }
+  .watch .preview video {
+    width: 300px;
+    height: 200px;
+  }
+
+  .create .preview img {
+    width: 450px;
+    height: 350px;
+  }
+  .create .desc {
+    padding-top: 20px;
+  }
+
+  /* faq section */
+  .faq-inner h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* enjoy, download, watch, create section */
+  .inner {
+    width: 850px;
+  }
+
+  .enjoy .preview img {
+    width: 430px;
+    height: 300px;
+  }
+  .enjoy .preview video {
+    width: 315px;
+    height: 170px;
+  }
+
+  .download .preview > img {
+    width: 425px; 
+    height: 330px;
+  }
+
+  .watch .preview img {
+    width: 425px;
+    height: 350px;
+  }
+  .watch .preview video {
+    width: 270px;
+    height: 180px;
+  }
+
+  .create .preview img {
+    width: 425px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* header */
+  .logo img {
+    width: 150px;
+  }
+
+  /* heading */
+  .heading h1 {
+    font-size: 50px;
+  }
+
+  /* faq section */
+  .faq-inner h1 {
+    font-size: 40px;
+  }
+  input[name=faq-item] + label, input[name=faq-item]:checked + label + .faq-content {
+    padding: 10px;
+    font-size: 23px;
+  }
+  input[name=faq-item] + label span {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 860px) {
+  /* enjoy, download, watch, create section */
+  .inner {
+    width: 750px;
+  }
+
+  .enjoy .preview img {
+    width: 375px;
+  }
+  .enjoy .preview video {
+    width: 270px;
+    height: 170px;
+  }
+
+  .download .preview > img {
+    width: 375px; 
+    height: 310px;
+  }
+  .preview-downloading {
+    width: 300px;
+    height: 100px;
+  }
+  .preview-downloading img:nth-of-type(1) {
+    width: 60px;
+    height: 70px;
+  }
+  .preview-downloading .pre-down-text {
+    top: 15px;
+    left: 90px;
+  }
+  .preview-downloading img:nth-of-type(2) {
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 10px;
+  }
+
+  .watch .preview img {
+    width: 375px;
+    height: 320px;
+  }
+  .watch .preview video {
+    width: 225px;
+    height: 150px;
+  }
+  .watch .desc h2, .create .desc h2 {
+    margin-top: 0;
+  }
+
+  .create .preview img {
+    width: 375px;
+    height: 320px;
+  }
+
+  /* faq section */
+  .faq-inner {
+    width: 800px;
+  }
+
+  /* footer */
+  .footer-inner {
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* faq section */
+  .faq-inner {
+    width: 750px;
+  }
+
+  /* footer */
+  .footer-inner {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .logo img {
+    width: 140px;
+  }
+  header {
+    padding: 35px 20px;
+  }
+
+  /* common css */
+  section {
+    padding: 20px;
+  }
+
+  /* welcome section */
+  .welcome {
+    height: 100vh;
+  }
+
+  /* heading */
+  .heading {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 34px;
+  }
+
+  /* getstarted */
+  .getstarted {
+    width: 90%;
+  }
+  .getstarted input[type=email] {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .getstarted input[type=email] + span {
+    top: 15px;
+  }
+
+  /* enjoy, download, watch, create section */
+  .enjoy, .download, .watch, .create {
+    height: auto;
+  }
+  .inner {
+    width: 100%;
+    position: static;
+    transform: translate(0);
+  }
+  .desc, .preview {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* change order */
+  .download .inner, .create .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .download .inner .desc,
+  .create .inner .desc { 
+    order: 1;
+  }
+  .download .inner .preview,
+  .create .inner .preview {
+    order: 2;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+  .desc h2 {
+    font-size: 30px;
+  }
+  .preview-downloading {
+    top: 200px;
+  }
+  .preview-downloading .pre-down-text {
+    top: 25px;
+  }
+  .pre-down-text p:last-child {
+    line-height: 1.2em;
+  }
+
+  /* faq section */
+  .faq {
+    padding: 80px 20px;
+  }
+  .faq-inner {
+    width: 100%;
+  }
+  .faq-inner h1 {
+    font-size: 30px;
+    line-height: 1.32em;
+  }
+  input[name=faq-item] + label span {
+    font-size: 26px;
+  }
+
+  /* footer */
+  footer {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .items {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  /* login modal */
+  .login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* enjoy section */
+  .enjoy .preview img {
+    width: 330px;
+  }
+  .enjoy .preview video {
+    width: 250px;
+  }
+
+  /* download section */
+  .download .preview > img {
+    width: 320px; 
+    height: 270px;
+  }
+  .preview-downloading {
+    width: 250px;
+    height: 80px;
+    top: 180px;
+  }
+  .preview-downloading img:nth-of-type(1) {
+    width: 40px;
+    height: 50px;
+  }
+  .preview-downloading .pre-down-text {
+    top: 15px;
+    left: 70px;
+  }
+  .pre-down-text p:first-child {
+    font-size: 15px;
+  }
+  .pre-down-text p:last-child {
+    font-size: 13px;
+  }
+  .preview-downloading img:nth-of-type(2) {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* watch section */
+  .watch .preview img {
+    width: 320px;
+    height: 250px;
+  }
+  .watch .preview video {
+    width: 200px;
+    height: 100px;
+  }
+
+  /* create section */
+  .create .preview img {
+    width: 320px;
+    height: 260px;
+  }
+
+  /* faq section */
+  input[name=faq-item] + label, input[name=faq-item]:checked + label + .faq-content {
+    padding: 10px;
+    font-size: 20px;
+  }
+  input[name=faq-item] + label span {
+    font-size: 20px;
+  }
+}
