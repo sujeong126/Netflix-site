@@ -1,6 +1,3 @@
-/* XEION CDN */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -278,8 +275,9 @@ input[name=faq-item] + label {
 }
 input[name=faq-item] + label span {
   float: right;
-  font-size: 30px;
   transition: 0.3s;
+  width: 35px;
+  height: 35px;
 }
 aside {
   text-align: center;
@@ -400,7 +398,6 @@ footer {
   text-decoration: underline;
 }
 .btn-close {
-  font-size: 40px;
   cursor: pointer;
   position: absolute;
   right: 40px;
