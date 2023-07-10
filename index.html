@@ -14,7 +14,7 @@
     <div class="container">
       <header>
         <div class="logo">
-          <img src="images/logo.png">
+          <img src="images/logo.png" alt="넷플릭스 로고 이미지">
         </div>
         <div class="signin">
           <button class="btn-open">sign in</button>
@@ -26,7 +26,7 @@
           <h5>Watch anywhere. Cancel anytime.</h5>
           <p>Ready to watch? Enter your email to create or restart your membership.</p>
           <div class="getstarted">
-            <input type="email" readonly>
+            <input type="email">
             <span>Email Address</span>
             <button>Get Started<i class="xi-angle-right-min"></i></button>
           </div>
@@ -42,7 +42,7 @@
             </p>
           </div>
           <div class="preview">
-            <img src="images/preview-01.png">
+            <img src="images/preview-01.png" alt="TV 목업 사진">
             <video src="images/preview-01-01.mp4" autoplay loop muted></video>
           </div>
         </div>
@@ -50,14 +50,14 @@
       <section class="download">
         <div class="inner">
           <div class="preview">
-            <img src="images/preview-02.jpg">
+            <img src="images/preview-02.jpg" alt="넷플릭스 영상 썸네일 이미지">
             <div class="preview-downloading">
-              <img src="images/boxshot.png">
+              <img src="images/boxshot.png" alt="Stranger Things 영화 포스터 이미지">
               <div class="pre-down-text">
                 <p>Stranger Things</p>
                 <p>Downloading...</p>
               </div>
-              <img src="images/download-icon.gif">
+              <img src="images/download-icon.gif" alt="다운로드 GIF 이미지">
             </div>
           </div>
           <div class="desc">
@@ -78,7 +78,7 @@
             </p>
           </div>
           <div class="preview">
-            <img src="images/preview-03.png">
+            <img src="images/preview-03.png" alt="Mac 목업 파일 이미지">
             <video src="images/preview-03-03.mp4" autoplay muted loop></video>
           </div>
         </div>
@@ -86,7 +86,7 @@
       <section class="create">
         <div class="inner">
           <div class="preview">
-            <img src="images/preview-04.png">
+            <img src="images/preview-04.png" alt="어린이를 위한 프로필 생성 가능 이미지">
           </div>
           <div class="desc">
             <h2>Create profiles for kids.</h2>
@@ -225,8 +225,8 @@
       <div class="login">
         <img src="images/x-icon.svg" class="btn-close">
         <h1>Login</h1>
-        <input type="text" placeholder="Email or phone number" readonly>
-        <input type="password" placeholder="Password" readonly>
+        <input type="text" placeholder="Email or phone number">
+        <input type="password" placeholder="Password">
         <input type="button" value="Sign in">
         <div class="save-info">
           <label> <!-- for=""가 있으면 텍스트를 클릭했을 때 체크 안 됨 -->
@@ -244,15 +244,6 @@
       </div>
     </div>
 
-    <script>
-      $('.btn-open').click(function(){
-        $('.modal-login').fadeIn();
-        $('body').addClass('active');
-      });
-      $('.btn-close').click(function(){
-        $('.modal-login').fadeOut();
-        $('body').removeClass('active');
-      });
-    </script>
+    <script src="modal-login.js"></script>
   </body>
 </html>

@@ -1,6 +1,9 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
 * {
   font-family: 'Roboto', sans-serif; /* form 요소가 있을 경우 input, button 등은 적용이 안 되기 때문 */
   box-sizing: border-box;
@@ -10,7 +13,7 @@ body {
   color: #fff;
   margin: 0;
   line-height: 1.6em;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 body.active {
   overflow: hidden;
@@ -22,14 +25,14 @@ a {
 
 /* common css */
 section {
-  border-bottom: 10px solid #333;
+  border-bottom: 0.625rem solid #333;
   position: relative;
 }
 
 /* header */
 header {
   overflow: hidden;
-  padding: 35px 55px;
+  padding: 2.188rem 3.438rem;
   position: absolute;
   width: 100%;
   z-index: 10;
@@ -38,7 +41,7 @@ header {
   float: left;
 }
 .logo img {
-  width: 170px;
+  width: 10.625rem;
 }
 .signin {
   float: right;
@@ -47,11 +50,11 @@ header {
   background-color: red;
   border: none;
   color: #fff;
-  padding: 7px 15px;
-  border-radius: 5px;
+  padding: 0.438rem 0.938rem;
+  border-radius: 0.313rem;
   text-transform: capitalize;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 /* welcome section */
@@ -78,65 +81,65 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 800px;
+  width: 55rem;
 }
 .heading h1 {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 1.2em;
   margin: 0;
 }
 .heading h5 {
   font-weight: normal;
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .heading p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .getstarted {
   position: relative;
   display: inline-block;
 }
 .getstarted input[type=email] {
-  width: 450px;
-  margin-right: -6px;
-  font-size: 18px;
-  padding-left: 10px;
+  width: 28.125rem;
+  margin-right: -0.375rem;
+  font-size: 1.125rem;
+  padding-left: 0.625rem;
 }
 .getstarted button {
-  width: 220px;
+  width: 13.75rem;
   background-color: red;
   color: #fff;
-  font-size: 26px;
+  font-size: 1.625rem;
   cursor: pointer;
 }
 .getstarted input[type=email],
 .getstarted button {
-  height: 60px;
+  height: 3.75rem;
   outline: none;
   border: none;
   vertical-align: middle; /* 수직 정렬 */
 }
 .getstarted input[type=email] + span {
   color: #999;
-  font-size: 16px;
+  font-size: 1rem;
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0.625rem;
+  top: 0.625rem;
   transition: 0.35s;
   pointer-events: none; /* span을 클릭해도 이벤트 발생 안 하게 하려고 */
 }
 .getstarted input[type=email]:focus + span {
   font-weight: bold;
-  transform: translateY(-18px);
+  transform: translateY(-1.125rem);
 }
 
 /* enjoy, download, watch, create section */
 .enjoy, .download, .watch, .create {
-  height: 500px;
+  height: 31.25rem;
 }
 .inner {
-  width: 1150px;
+  width: 71.875rem;
   margin: auto;
   overflow: hidden;
   position: absolute;
@@ -149,10 +152,10 @@ header {
   width: 50%;
 }
 .desc {
-  padding-top: 55px;
+  padding-top: 3.438rem;
 }
 .desc h2 {
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.2em;
   margin-bottom: 0;
 }
@@ -161,46 +164,46 @@ header {
   position: relative;
 }
 .enjoy .preview img {
-  width: 530px;
-  height: 400px;
+  width: 33.125rem;
+  height: 25rem;
   position: relative; /* z-index 적용하기 위해 */
   z-index: 2;
 }
 .enjoy .preview video {
-  width: 390px;
+  width: 24.375rem;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .download .preview > img {
-  width: 500px; 
-  height: 380px;
+  width: 31.25rem; 
+  height: 23.75rem;
 }
 .preview-downloading {
-  width: 320px;
-  height: 120px;
+  width: 20rem;
+  height: 7.5rem;
   border: 3px solid #333;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #000;
   position: absolute;
-  top: 240px;
+  top: 15rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .preview-downloading img:nth-of-type(1) {
-  width: 70px;
-  height: 90px;
+  width: 4.375rem;
+  height: 5.625rem;
   float: left;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 0.625rem;
+  left: 0.938rem;
 }
 .preview-downloading .pre-down-text {
-  width: 150px;
+  width: 9.375rem;
   position: absolute;
-  top: 25px;
-  left: 100px;
+  top: 1.563rem;
+  left: 6.25rem;
 }
 .pre-down-text p {
   margin: 0;
@@ -208,51 +211,51 @@ header {
 }
 .pre-down-text p:first-child {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .pre-down-text p:last-child {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.938rem;
   color: rgb(0, 102, 255);
   line-height: 0;
 }
 .preview-downloading img:nth-of-type(2) {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   float: right;
   position: absolute;
-  top: 25px;
-  right: 15px;
+  top: 1.563rem;
+  right: 0.938rem;
 }
 .watch .preview img {
-  width: 555px; 
-  height: 415px;
+  width: 34.688rem; 
+  height: 25.938rem;
   position: relative; /* z-index 적용하기 위해 */
   z-index: 2;
 }
 .watch .preview video {
-  width: 360px;
+  width: 22.5rem;
   position: absolute;
-  top: 40px;
+  top: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
 .create .preview img {
-  width: 505px; 
-  height: 380px;
+  width: 31.563rem; 
+  height: 23.75rem;
 }
 
 /* faq section */
 .faq {
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 .faq-inner {
-  width: 850px;
+  width: 53.125rem;
   margin: auto;
 }
 .faq-inner h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 input[name=faq-item] {
   display: none;
@@ -260,14 +263,14 @@ input[name=faq-item] {
 input[name=faq-item] + label {
   display: block;
   background-color: #303030;
-  padding: 15px;
+  padding: 0.938rem;
   cursor: pointer;
-  margin-bottom: 3px;
+  margin-bottom: 0.188rem;
 }
 .faq-content {
   background-color: #303030;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   /* display: none; */ /* 트렌지션 줄 수 없음 */
   max-height: 0;
   overflow: hidden;
@@ -276,21 +279,21 @@ input[name=faq-item] + label {
 input[name=faq-item] + label span {
   float: right;
   transition: 0.3s;
-  width: 35px;
-  height: 35px;
+  width: 2.188rem;
+  height: 2.188rem;
 }
 aside {
   text-align: center;
 }
 aside p {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* checked function */
 input[name=faq-item]:checked + label + .faq-content {
   /* display: block; */
-  max-height: 500px;
-  padding: 15px;
+  max-height: 31.25rem;
+  padding: 0.938rem;
 }
 input[name=faq-item]:checked + label span {
   transform: rotate(-45deg);
@@ -298,19 +301,19 @@ input[name=faq-item]:checked + label span {
 
 /* footer */
 footer {
-  padding: 50px 0;
-  font-size: 12px;
+  padding: 3.125rem 0;
+  font-size: 0.75rem;
   color: #777;
   line-height: 1.5em;
 }
 .footer-inner {
-  width: 850px;
+  width: 53.125rem;
   margin: auto;
 }
 .sitemap h6 {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-weight: normal;
 }
 .items {
@@ -339,43 +342,43 @@ footer {
   display: none;
 }
 .login {
-  width: 450px;
-  height: 550px;
+  width: 28.125rem;
+  height: 34.375rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.8);
-  font-size: 15px;
+  font-size: 0.938rem;
   color: #777;
   font-weight: 300;
-  padding: 50px;
+  padding: 3.125rem;
 }
 .login h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .login input[type=text], 
 .login input[type=password] {
   background-color: #333;
-  padding: 20px 15px;
-  border-radius: 5px;
+  padding: 1.25rem 0.938rem;
+  border-radius: 0.313rem;
   width: 100%;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   outline: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 .login input[type=button] {
-  font-size: 20px;
+  font-size: 1.25rem;
   background-color: red;
   color: #fff;
   border: none;
   outline: none;
   width: 100%;
-  border-radius: 5px;
-  padding: 15px;
+  border-radius: 0.313rem;
+  padding: 0.938rem;
   cursor: pointer;
 }
 .login p {
@@ -386,7 +389,7 @@ footer {
 }
 .save-info {
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .save-info label {
   float: left;
@@ -400,6 +403,6 @@ footer {
 .btn-close {
   cursor: pointer;
   position: absolute;
-  right: 40px;
-  top: 25px;
+  right: 2.5rem;
+  top: 1.563rem;
 }
