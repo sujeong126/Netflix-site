@@ -1,9 +1,6 @@
 /* Google Web Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* XEION CDN */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
 * {
   font-family: 'Roboto', sans-serif; /* form 요소가 있을 경우 input, button 등은 적용이 안 되기 때문 */
   box-sizing: border-box;
